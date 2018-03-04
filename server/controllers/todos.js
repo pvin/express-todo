@@ -64,7 +64,7 @@ module.exports = {
             .catch((error) => res.status(400).send(error));
     },
 
-    destroyy(req, res){
+    destroy(req, res){
       return Todo
             .findById(req.params.todoId,{attributes : ['id', 'title']})
             .then(todo => {
